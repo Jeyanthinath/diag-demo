@@ -92,6 +92,8 @@ $data = '{
       }
     }
   }';
-header('Content-Type: application/json');
+// header('Content-Type: application/json');
+$data = json_decode($data, true);
+header('Content-type:application/json;charset=utf-8');
 echo json_encode($data);
 ?>
