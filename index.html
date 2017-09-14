@@ -91,7 +91,8 @@
                 mounted: function(){
                     var self = this;
                     $.ajax({
-                        url: 'http://www.mocky.io/v2/59babf8b0f00003b036229d0',
+                        // url: 'http://www.mocky.io/v2/59babf8b0f00003b036229d0',
+                        url: "https://diag-demo.herokuapp.com/page1.php",
                         method: 'GET',
                         success: function(data){
                             self.message = data['page']['content-items']['content'];
